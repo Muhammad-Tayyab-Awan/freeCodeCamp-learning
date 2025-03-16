@@ -2,4 +2,29 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
+}
+#navbar {
+  position: fixed;
+  width: 25%;
+  left: 0%;
+  background-color: wheat;
+  height: 100vh;
+  overflow-y: scroll;
+}
+#navbar header {
+  font-size: x-large;
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 2px solid black;
+  position: sticky;
+  background-color: whitesmoke;
+  top: 0;
+}
+#main-doc {
+  position: fixed;
+  right: 0%;
+  width: 75%;
+  height: 100vh;
+  overflow-y: scroll;
 }
