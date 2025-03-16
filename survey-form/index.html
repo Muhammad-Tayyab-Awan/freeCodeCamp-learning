@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this short survey form.</p>
+
+    <form id="survey-form">
+      <label id="name-label" for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your name"
+        required
+      />
+
+      <label id="email-label" for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      />
+
+      <label id="number-label" for="number">Age (18-60):</label>
+      <input
+        type="number"
+        id="number"
+        name="number"
+        min="18"
+        max="60"
+        placeholder="Enter your age"
+      />
+
+      <label for="dropdown">Your Profession:</label>
+      <select id="dropdown" name="profession">
+        <option value="">Select an option</option>
+        <option value="student">Student</option>
+        <option value="developer">Developer</option>
+        <option value="teacher">Teacher</option>
+      </select>
+
+      <p>Would you recommend this form?</p>
+      <label
+        ><input type="radio" name="recommend" value="yes" required /> Yes</label
+      >
+      <label><input type="radio" name="recommend" value="no" /> No</label>
+
+      <p>Which platforms do you use?</p>
+      <label
+        ><input type="checkbox" name="platforms" value="youtube" />
+        YouTube</label
+      >
+      <label
+        ><input type="checkbox" name="platforms" value="github" /> GitHub</label
+      >
+      <label
+        ><input type="checkbox" name="platforms" value="freecodecamp" />
+        freeCodeCamp</label
+      >
+
+      <label for="comments">Additional Comments:</label>
+      <textarea
+        id="comments"
+        name="comments"
+        rows="4"
+        placeholder="Enter your comments here..."
+      ></textarea>
+
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
