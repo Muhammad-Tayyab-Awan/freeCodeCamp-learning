@@ -12,22 +12,233 @@
     />
   </head>
   <body>
-    <nav id="navbar"><header>JavaScript Docs</header></nav>
+    <nav id="navbar">
+      <header><a href="/">JavaScript Docs</a></header>
+      <a class="nav-link" href="#Introduction">Introduction</a>
+      <a class="nav-link" href="#Variables">Variables</a>
+      <a class="nav-link" href="#Data_Types">Data Types</a>
+      <a class="nav-link" href="#Control_Structures">Control Structures</a>
+      <a class="nav-link" href="#Functions">Functions</a>
+      <a class="nav-link" href="#Strings">Strings</a>
+      <a class="nav-link" href="#Arrays">Arrays</a>
+      <a class="nav-link" href="#Objects">Objects</a>
+      <a class="nav-link" href="#Built_in_Functions">Built in Functions</a>
+      <a class="nav-link" href="#DOM_Manipulation">DOM Manipulation</a>
+      <a class="nav-link" href="#JavaScript_API's">JavaScript API's</a>
+      <a class="nav-link" href="#Object_Oriented_Programming"
+        >Object Oriented Programming</a
+      >
+      <footer>
+        &copy; 2025 | Developed by Muhammad Tayyab | JavaScript Docs
+      </footer>
+    </nav>
     <main id="main-doc">
-      <section class="main-section" id="introduction">
+      <header class="mobile-navbar">JavaScript Docs</header>
+      <section class="main-section" id="Introduction">
         <header>Introduction</header>
+        <h3>What is JavaScript?</h3>
+        <p>
+          JavaScript was introduced in 1995 as a way to add programs to web
+          pages in the Netscape Navigator browser. The language has since been
+          adopted by all other major graphical web browsers. It has made modern
+          web applications possible that is, applications with which you can
+          interact directly without doing a page reload for every action.
+          JavaScript is also used in more traditional websites to provide
+          various forms of interactivity and cleverness.
+        </p>
+        <p>
+          It is important to note that JavaScript has almost nothing to do with
+          the programming language named Java. The similar name was inspired by
+          marketing considerations rather than good judgment. When JavaScript
+          was being introduced, the Java language was being heavily marketed and
+          was gaining popularity. Someone thought it was a good idea to try to
+          ride along on this success. Now we are stuck with the name.
+        </p>
+        <p>
+          After its adoption outside of Netscape, a standard document was
+          written to describe the way the JavaScript language should work so
+          that the various pieces of software that claimed to support JavaScript
+          could make sure they actually provided the same language. This is
+          called the ECMAScript standard, after the Ecma International
+          organization that conducted the standardization. In practice, the
+          terms ECMAScript and JavaScript can be used interchangeably they are
+          two names for the same language.
+        </p>
+        <p>
+          There are those who will say terrible things about JavaScript. Many of
+          these things are true. When I was required to write something in
+          JavaScript for the first time, I quickly came to despise it. It would
+          accept almost anything I typed but interpret it in a way that was
+          completely different from what I meant. This had a lot to do with the
+          fact that I did not have a clue what I was doing, of course, but there
+          is a real issue here: JavaScript is ridiculously liberal in what it
+          allows. The idea behind this design was that it would make programming
+          in JavaScript easier for beginners. In actuality, it mostly makes
+          finding problems in your programs harder because the system will not
+          point them out to you.
+        </p>
+        <p>
+          This flexibility also has its advantages, though. It leaves room for
+          techniques that are impossible in more rigid languages and makes for a
+          pleasant, informal style of programming. After learning the language
+          properly and working with it for a while, I have come to actually like
+          JavaScript
+        </p>
+        <p>
+          There have been several versions of JavaScript. ECMAScript version 3
+          was the widely supported version during JavaScript&apos;s ascent to
+          dominance, roughly between 2000 and 2010. During this time, work was
+          underway on an ambitious version 4, which planned a number of radical
+          improvements and extensions to the language. Changing a living, widely
+          used language in such a radical way turned out to be politically
+          difficult, and work on version 4 was abandoned in 2008. A much less
+          ambitious version 5, which made only some uncontroversial
+          improvements, came out in 2009. In 2015, version 6 came out, a major
+          update that included some of the ideas planned for version 4. Since
+          then we&apos;ve had new, small updates every year.
+        </p>
+        <p>
+          The fact that JavaScript is evolving means that browsers have to
+          constantly 6 keep up. If you&apos;re using an older browser, it may
+          not support every feature. The language designers are careful to not
+          make any changes that could break existing programs, so new browsers
+          can still run old programs. In this book, I&apos;m using the 2024
+          version of JavaScript.
+        </p>
+        <h3>Code, and what to do with it</h3>
+        <p>
+          Code is the text that makes up programs. Most chapters in this book
+          contain quite a lot of code. I believe reading code and writing code
+          are indispensable parts of learning to program. Try to not just glance
+          over the examples—read them attentively and understand them. This may
+          be slow and confusing at first, but I promise that you&apos;ll quickly
+          get the hang of it. The same goes for the exercises. Don&apos;t assume
+          you understand them until you&apos;ve actually written a working
+          solution.
+        </p>
+        <p>
+          I recommend you try your solutions to exercises in an actual
+          JavaScript interpreter. That way, you&apos;ll get immediate feedback
+          on whether what you are doing is working, and, I hope, you&apos;ll be
+          tempted to experiment and go beyond the exercises.
+        </p>
+        <p>
+          The easiest way to run the example code in the book—and to experiment
+          with it is to look it up in the online version of the book at
+          https://eloquentjavascript.net. There, you can click any code example
+          to edit and run it and to see the output it produces. To work on the
+          exercises, go to https://eloquentjavascript.net/ code, which provides
+          starting code for each coding exercise and allows you to look at the
+          solutions.
+        </p>
+        <p>
+          Running the programs defined in this book outside of the books website
+          requires some care. Many examples stand on their own and should work
+          in any JavaScript environment. But code in later chapters is often
+          written for a specific environment (the browser or Node.js) and can
+          run only there. In addition, many chapters define bigger programs, and
+          the pieces of code that appear in them depend on each other or on
+          external files. The sandbox on the website provides links to ZIP files
+          containing all the scripts and data files necessary to run the code
+          for a given chapter.
+        </p>
       </section>
-      <section class="main-section" id="variables">
+      <section class="main-section" id="Variables">
         <header>Variables</header>
+        <h3>Defining & Using Variables</h3>
+        <p>
+          Variables are what make up most of JavaScript. These variables make up
+          things from numbers to objects, which are all over JavaScript to make
+          one's life much easier.
+        </p>
+        <code
+          >var myVariable = "This is a variable!";<span class="copy"
+            >Copy</span
+          ></code
+        >
+        <p>
+          This is an example of defining variables. This variable is called a
+          "string" because it has ASCII characters (A-Z, 0-9, !@#$, etc.)
+        </p>
+        <code>
+          var number1 = 5;
+          <br />
+          number1 = 3;
+          <span class="copy">Copy</span>
+        </code>
+        <p>
+          Here, we defined a number called "number1" which was equal to 5.
+          However, on the second line, we changed the value to 3. To show the
+          value of a variable, we log it to the console or use window.alert();
+        </p>
+        <code>
+          console.log(number1); // 3
+          <br />
+          window.alert(number1); // 3
+          <span class="copy">Copy</span>
+        </code>
+        <p>To add, subtract, multiply, divide, etc., we do like so:</p>
+        <code
+          >number1 = number1 + 5; // 3 + 5 = 8
+          <br />
+          number1 = number1 - 6; // 8 - 6 = 2
+          <br />
+          var number2 = number1 * 10; // 2 (times) 10 = 20
+          <br />
+          var number3 = number2 / number1; // 20 (divided by) 2 = 10;
+          <span class="copy">Copy</span></code
+        >
+        <p>
+          We can also add strings which will concatenate them, or put them
+          together. For example:
+        </p>
+        <code
+          >var myString = "I am a " + "string!"; // "I am a string!"<span
+            class="copy"
+            >Copy</span
+          ></code
+        >
+        <h3>Comments</h3>
+        <p>
+          To add annotations, hints, or exclude some code from being executed
+          JavaScript provides two ways of commenting code lines
+        </p>
       </section>
-      <section class="main-section" id="data-types">
+      <section class="main-section" id="Data_Types">
         <header>Data Types</header>
+        <h3>Data Types</h3>
+        <li>Integers</li>
+        <li>Float</li>
+        <li>Boolean</li>
+        <li>String</li>
+        <li>Object</li>
       </section>
-      <section class="main-section" id="control-structures">
+      <section class="main-section" id="Control_Structures">
         <header>Control Structures</header>
       </section>
-      <section class="main-section" id="functions">
+      <section class="main-section" id="Functions">
         <header>Functions</header>
+      </section>
+      <section class="main-section" id="Strings">
+        <header>Strings</header>
+      </section>
+      <section class="main-section" id="Arrays">
+        <header>Arrays</header>
+      </section>
+      <section class="main-section" id="Objects">
+        <header>Objects</header>
+      </section>
+      <section class="main-section" id="Built_in_Functions">
+        <header>Built in Functions</header>
+      </section>
+      <section class="main-section" id="DOM_Manipulation">
+        <header>DOM Manipulation</header>
+      </section>
+      <section class="main-section" id="JavaScript_API's">
+        <header>JavaScript API's</header>
+      </section>
+      <section class="main-section" id="Object_Oriented_Programming">
+        <header>Object Oriented Programming</header>
       </section>
     </main>
   </body>
