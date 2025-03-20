@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product landing Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div>
+        <p id="page-title">CarBuy</p>
+        <img src="assets/car.png" alt="car" id="header-img" />
+      </div>
+      <nav id="nav-bar">
+        <a href="#features" class="nav-link">Features</a
+        ><a href="#pricing" class="nav-link">Pricing</a
+        ><a href="#buy-now" class="nav-link">Buy Now</a>
+      </nav>
+    </header>
+    <main>
+      <section id="features">
+        <ul>
+          <li>
+            <img src="assets/fcw.png" alt="fcw" />
+            <div>
+              <span>Forward Collision Warning (FCW)</span>
+              <p>Warns the driver of an impending collision.</p>
+            </div>
+          </li>
+          <li>
+            <img src="assets/abs.png" alt="abs" />
+            <div>
+              <span>Anti-lock Braking Systems (ABS)</span>
+              <p>
+                Prevent wheels from locking up during hard braking, allowing the
+                driver to maintain steering control.
+              </p>
+            </div>
+          </li>
+          <li>
+            <img src="assets/aeb.png" alt="aeb" />
+            <div>
+              <span>Automatic Emergency Braking (AEB)</span>
+              <p>
+                Automatically applies the brakes to mitigate or prevent a
+                collision.
+              </p>
+            </div>
+          </li>
+        </ul>
+        <iframe
+          src="https://www.youtube.com/embed/qqVIK_HlhDM?si=mU6hJFygt82xHHIP"
+          title="CarBuy.com"
+          frameborder="0"
+          id="video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <section id="pricing"></section>
+      <section id="buy-now">
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email address"
+            required
+          />
+          <input type="submit" value="Arrange meeting" id="submit" />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
